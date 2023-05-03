@@ -13,6 +13,12 @@
      <div align="center" class="content">
 	    
 	     <script>
+		     function sound(){
+		audio = new Audio("https://github.com/nagibatr3000/nagibatr3000.github.io/blob/main/sounds/scream.wav?raw=true");
+		audio.play()
+		}
+		      sound = debounce(sound, 4.5);
+		     
 		     function randomr(min, max){
 		    return Math.floor(Math.Random() * (max-min) + min);
 		     }
@@ -23,6 +29,7 @@
 		// something
 		     }
 		     window.oncontextmenu = function(){
+			  sound();
 			  return false;   
 		     }
  // Define a debounce function to limit the rate at which the mutation observer callback is called
@@ -35,12 +42,6 @@
       }, delay);
     };
   };
-		function sound(){
-		audio = new Audio("https://github.com/nagibatr3000/nagibatr3000.github.io/blob/main/sounds/scream.wav?raw=true");
-		audio.play()
-		}
-		     
-		     sound = debounce(sound, 4.5);
 		     
 		 document.addEventListener("mouseenter", sound);
 	     </script>
