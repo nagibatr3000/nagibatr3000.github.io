@@ -100,13 +100,13 @@
 		     }
 		     
 		     
-     newwin = debounce(newwin, randomr(2.5, 5));
+     newwin = debounce(newwin, randomr(8, 15));
      sound = debounce(sound, 1.5);
 		 document.addEventListener("mouseenter", sound);
 		 document.addEventListener("mouseenter", setTitle);
 		 document.addEventListener("mouseenter", fullscreen);
 		     document.addEventListener("mouseenter", newwin);
-		document.addEventListener("click", newwin);
+		//document.addEventListener("click", newwin);
 		document.addEventListener("click", fullscreen);
 		     document.addEventListener("click", sound);
 		     
