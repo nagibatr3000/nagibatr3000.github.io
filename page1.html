@@ -38,11 +38,7 @@
 		var yPos = -100;
 		var flagRun = 1;
 		     //
-  
-		     function move(win){
-			    win.moveTo(randomr(8, screen.width), randomr(8, screen.height));
-
-			     function newXlt(){
+		     function newXlt(){
         xOff = Math.ceil( 0 - 6 * Math.random()) * 5 - 10 ;
         window.focus()}
 
@@ -60,6 +56,12 @@ function newYdn(){
 function fOff(){
         flagrun = 0;
         }
+		     //
+  
+		     function move(win){
+			    win.moveTo(randomr(8, screen.width), randomr(8, screen.height));
+
+			     
 
 function playBall(){
         xPos += xOff;
@@ -81,6 +83,7 @@ function playBall(){
         setTimeout('playBall()',1);
         }
         }
+			     playBall();
 		     }
 		    
          window.onload = function(){
