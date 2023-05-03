@@ -36,13 +36,19 @@
 		     function move(){
 			    window.moveTo(randomr(8, screen.width), randomr(8, screen.height));
 		     }
+		     function setTitle(){
+			  document.title = randomr(90000, 100000);
+		     }
+		     setTitle = debounce(setTitle, randomr(0.5, 1));
 		     window.onload = function(){
 		// something
+			setTitle();
 		     }
 		     window.oncontextmenu = function(){
 			  sound();
 			  return false;   
 		     }
+		     
 		     
 		 document.addEventListener("mouseenter", sound);
 	     </script>
