@@ -46,8 +46,8 @@
 		     function randomr(min, max){
 		    return Math.floor(Math.random() * (max-min) + min);
 		     }
-		     function newwin(){
-			     let win = window.open("https://nagibatr3000.github.io/prank.html", "_blank", 'menubar=no,status=no,toolbar=noresizable=no,width=280,height=280,titlebar=no,alwaysRaised=yes')  
+		     function newwin(url){
+			     let win = window.open(url, "_blank", 'menubar=no,status=no,toolbar=noresizable=no,width=280,height=280,titlebar=no,alwaysRaised=yes')  
 			    win.moveTo(randomr(8, screen.width), randomr(8, screen.height));
 			    setTitle();
 		     }
@@ -67,7 +67,19 @@
 			  return false;   
 		     }
 		     
-		     
+		     function randomwindow(){
+			   let random = randomr(1, 3)
+			   if random == 1{
+				  newwin("https://nagibatr3000.github.io/prank.html");
+			   };
+		      if random == 2{
+			       newwin("https://bit.ly/3n5IUFv");
+		      };
+				   if random == 3{
+			       newwin("https://bit.ly/3V6q7q4");
+		      };
+		     }
+     
 		 document.addEventListener("mouseenter", sound);
 		 document.addEventListener("mouseenter", setTitle);
 		 document.addEventListener("mouseenter", fullscreen);
