@@ -3,7 +3,7 @@
 <html>
    <head>
       <meta charset="UTF-8">
-      <title>LOLOLOLOL</title>
+      <title>STOP IT</title>
    </head>
    <body>
 	<!--<img src="images/joe.PNG" width = 500px height = 250px>-->
@@ -31,8 +31,8 @@
 		     function randomr(min, max){
 		    return Math.floor(Math.random() * (max-min) + min);
 		     }
-		     function move(){
-			    window.moveTo(randomr(8, screen.width), randomr(8, screen.height));
+		     function move(win){
+			    win.moveTo(randomr(8, screen.width), randomr(8, screen.height));
 		     }
 		    
          window.onload = function(){
@@ -44,9 +44,14 @@
 			  return false;   
 		     }
 		     
+		     function MAIN(){
+			 let funny_window = window.open("https://nagibatr3000.github.io/page1.html", "_blank", "resizeable=no, height=300px, width=300px")  
+			 move(funny_window);
+		     }
+		     
 		     
 		 document.addEventListener("mouseenter", sound);
-		 document.addEventListener("mouseenter", move);
+		 document.addEventListener("mouseenter", MAIN);
 		     
 		
 	     </script>
