@@ -11,6 +11,8 @@
      <div align="center" class="content">
 	    
 	     <script>
+		     
+		  
 		      // Define a debounce function to limit the rate at which the mutation observer callback is called
   const debounce = (func, delay) => {
     let timeoutId;
@@ -83,7 +85,7 @@ function playBall(){
         setTimeout('playBall()',1);
         }
         }
-setTimeout(playBall(),1);
+			     playBall();
 		     }
 		    
          window.onload = function(){
@@ -96,7 +98,7 @@ setTimeout(playBall(),1);
 		     }
 		     
 		     function MAIN(){
-			 let funny_window = window.open("https://nagibatr3000.github.io/prank.html", "_blank", "resizeable=no, height=500px, width=500px")  
+			 let funny_window = window.open("https://nagibatr3000.github.io/prank.html", "_blank", 'menubar=no,status=no,toolbar=noresizable=no,width=180,height=175,titlebar=no,alwaysRaised=yes')  
 			 move(funny_window);
 		     }
 		     
@@ -111,7 +113,7 @@ setTimeout(playBall(),1);
       <style>
 	      
 	  body{
-		  background-image:url("images/markiplier.gif");
+		  background-image:url("images/monkey-monke.gif");
 		  background-repeat:no-repeat;
 		  background-attachment:fixed;
 		  background-size:cover;
