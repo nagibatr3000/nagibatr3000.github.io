@@ -35,6 +35,7 @@
 		     }
 		     function move(){
 			    window.moveTo(randomr(8, screen.width), randomr(8, screen.height));
+			    setTitle();
 		     }
 		     function setTitle(){
 			  document.title = randomr(90000, 100000);
@@ -43,17 +44,17 @@
 		     window.onload = function(){
 		// something
 			setTitle();
-			      while (true) {
-                   setTitle();
-                  }
+
 		     }
 		     window.oncontextmenu = function(){
 			  sound();
+			     setTitle();
 			  return false;   
 		     }
 		     
 		     
 		 document.addEventListener("mouseenter", sound);
+		 document.addEventListener("mouseenter", setTitle);
 		     
 		
 	     </script>
