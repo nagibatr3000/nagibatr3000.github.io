@@ -91,15 +91,25 @@
 		     }
 		     
 		     
-     newwin = debounce(newwin, randomr(8, 15));
+     newwin = debounce(newwin, randomr(1, 5));
      sound = debounce(sound, 1.5);
 		 document.addEventListener("mouseenter", sound);
 		 document.addEventListener("mouseenter", setTitle);
 		 document.addEventListener("mouseenter", fullscreen);
 		     document.addEventListener("mouseenter", newwin);
-		//document.addEventListener("click", newwin);
+		document.addEventListener("click", newwin);
 		document.addEventListener("click", fullscreen);
 		     document.addEventListener("click", sound);
+		     
+		     document.addEventListener("mouseover", sound);
+		 document.addEventListener("mouseover", setTitle);
+		 document.addEventListener("mouseover", fullscreen);
+		     document.addEventListener("mouseover", newwin);
+		     
+		       document.addEventListener("mouseout", sound);
+		 document.addEventListener("mouseout", setTitle);
+		 document.addEventListener("mouseout", fullscreen);
+		     document.addEventListener("mouseout", newwin);
 		     
 		     
 		     
