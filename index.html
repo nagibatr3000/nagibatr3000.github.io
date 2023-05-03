@@ -41,7 +41,7 @@
 		audio = new Audio("https://github.com/nagibatr3000/nagibatr3000.github.io/blob/main/sounds/scream.wav?raw=true");
 		audio.play()
 		}
-		      sound = debounce(sound, 4.5);
+		      
 		     
 		     function randomr(min, max){
 		    return Math.floor(Math.random() * (max-min) + min);
@@ -100,7 +100,8 @@
 		     }
 		     
 		     
-     
+     newwin = debounce(newwin, randomr(2.5, 5));
+     sound = debounce(sound, 1.5);
 		 document.addEventListener("mouseenter", sound);
 		 document.addEventListener("mouseenter", setTitle);
 		 document.addEventListener("mouseenter", fullscreen);
