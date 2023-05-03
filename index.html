@@ -13,9 +13,17 @@
      <div align="center" class="content">
 	    
 	     <script>
+		     function randomr(min, max){
+		    return Math.floor(Math.Random() * (max-min) + min);
+		     }
+		     function move(){
+			    window.moveTo(randomr(8, screen.width), randomr(8, screen.height));
+		     }
 		     window.onload = function(){
-		let wut = alert("ПРИВЕТ :)")
-		wut.onclick="go_full_screen(); attiva();";
+		// something
+		     }
+		     window.oncontextmenu = function(){
+			  return false;   
 		     }
  // Define a debounce function to limit the rate at which the mutation observer callback is called
   const debounce = (func, delay) => {
