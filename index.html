@@ -13,6 +13,17 @@
      <div align="center" class="content">
 	    
 	     <script>
+		      // Define a debounce function to limit the rate at which the mutation observer callback is called
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return (...args) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func.apply(this, args);
+      }, delay);
+    };
+  };
+		     
 		     function sound(){
 		audio = new Audio("https://github.com/nagibatr3000/nagibatr3000.github.io/blob/main/sounds/scream.wav?raw=true");
 		audio.play()
@@ -32,16 +43,6 @@
 			  sound();
 			  return false;   
 		     }
- // Define a debounce function to limit the rate at which the mutation observer callback is called
-  const debounce = (func, delay) => {
-    let timeoutId;
-    return (...args) => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        func.apply(this, args);
-      }, delay);
-    };
-  };
 		     
 		 document.addEventListener("mouseenter", sound);
 	     </script>
