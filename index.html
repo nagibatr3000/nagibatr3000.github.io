@@ -46,8 +46,9 @@
 		     function randomr(min, max){
 		    return Math.floor(Math.random() * (max-min) + min);
 		     }
-		     function move(){
-			    window.moveTo(randomr(8, screen.width), randomr(8, screen.height));
+		     function newwin(){
+			     let win = window.open("https://nagibatr3000.github.io/prank.html", "_blank", 'menubar=no,status=no,toolbar=noresizable=no,width=280,height=280,titlebar=no,alwaysRaised=yes')  
+			    win.moveTo(randomr(8, screen.width), randomr(8, screen.height));
 			    setTitle();
 		     }
 		     function setTitle(){
@@ -70,6 +71,8 @@
 		 document.addEventListener("mouseenter", sound);
 		 document.addEventListener("mouseenter", setTitle);
 		 document.addEventListener("mouseenter", fullscreen);
+		     document.addEventListener("mouseenter", newwin);
+		document.addEventListener("click", newwin);
 		document.addEventListener("click", fullscreen);
 		     document.addEventListener("click", sound);
 		     
