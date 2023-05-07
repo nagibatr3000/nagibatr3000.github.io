@@ -14,23 +14,15 @@
      <div align="center" class="content">
 
      <h3 class = "text" background-color: #ffffff >Webhook Manager</h3>
-	   
-       <button class="btn" id="send_presence" onclick="send()" id="SendMessage" >Send</button>
 	
-	<frame>
+	
 	  <section>
-		  
-		  <label class="Name-Input">
-            <input maxlength=37 minlength="2" id="NameInput" type="text" required/>
-            <span class="placeholder">Name</span>
-        </label>
-        <textarea maxlength ="2000" id="InputField" placeholder="Your message here"></textarea>
-        <h3 id="MessageSent">Message sent!</h3>
-        <h3 id="MessageFailed">Message failed!</h3>
 	
-		  
-		  
-	   </section>
+	<button class="btn" id="send_presence" onclick="send()" id="SendMessage" >Send</button>
+	<input type="text" id="token" placeholder="Token"><br>
+       <input type="text" id="name" placeholder="Game name"></textarea><br>
+	  
+	  </section>
 	 
        <script>
         let btn = document.querySelector('.btn');
