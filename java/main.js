@@ -8,7 +8,7 @@ function send(){
     get_vars();
     const msg = {
         "content": str,
-        "username": " "
+        "username": "Lawliet"
     };
     console.log(msg)
     if(str == ""){
