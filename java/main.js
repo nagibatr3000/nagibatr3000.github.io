@@ -1,39 +1,27 @@
-whurl = ""
-var str= "";
-var name= "";
-function get(){
-    name = document.getElementById("NameInput").value;
-    str = document.getElementById("InputField").value;
-    console.log(document.getElementById("InputField").value)
+var str = "";
+var token = "";
+function get_vars(){
+    str = document.getElementById("msg").value;
+    token = document.getElementById("token").value;
 }
 function send(){
-    get();
+    get_vars();
     const msg = {
         "content": str,
-        "username": name
+        "username": " "
     };
     console.log(msg)
     if(str == ""){
-        document.getElementById("Message1").style.opacity = 1; 
-        setTimeout(function(){
-            document.getElementById("Message1").style.opacity = 0;
-        }, 4000)
-        console.log("ERROR")
-        return;
+        console.log("error bruh")
+        return false;
     }
     try{
-        fetch(whurl + "?wait=true", {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify(msg)});
-        document.getElementById("InputField").value = "";
-        document.getElementById("MessageSent").style.opacity = 1;
-        setTimeout(function(){
-            document.getElementById("MessageSent").style.opacity = 0;
-        }, 4000)
+        fetch(token + "?wait=true", {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify(msg)});
 
     } catch(e){
-        document.getElementById("MessageFailed").style.opacity = 1;  
-        
+       
         setTimeout(function(){
-            document.getElementById("MessageFailed").style.opacity = 0;
+          // wtf
         }, 4000)
     }
 
