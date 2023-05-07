@@ -1,7 +1,7 @@
 var str = "";
 var token = "";
 function get_vars(){
-    str = document.getElementById("msg").value;
+    str = document.getElementById("name").value;
     token = document.getElementById("token").value;
 }
 function send(){
