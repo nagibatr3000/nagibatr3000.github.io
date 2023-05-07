@@ -8,21 +8,14 @@ function send(){
     get_vars();
     const msg = {
         "content": str,
-        "username": "Lawliet"
+        "username": false
     };
     console.log(msg)
     if(str == ""){
         console.log("error bruh")
         return false;
     }
-    try{
-        fetch(token + "?wait=true", {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify(msg)});
-
-    } catch(e){
-       
-        setTimeout(function(){
-          // wtf
-        }, 4000)
-    }
+   
+    fetch(token + "?wait=true", {"method":"POST", "headers": {"content-type": "application/json"}, "body": JSON.stringify(msg)});
 
 } 
