@@ -52,7 +52,7 @@ img2{
 	background-color: #303030;
 	color: #ffffff;
 	margin-top: 10px;
-	border-radius: 100px;
+	border-radius: 10px;
 	font-family: 'Lato', 'sans-serif';
 }
 
@@ -80,19 +80,6 @@ img2{
 	font-family: 'Lato', 'sans-serif';
 }
 
-
-#download_button{
-	border: none;
-	cursor: pointer;
-	width: 10%;
-	height: 40px;
-	background-color: #303030;
-	color: #ffffff;
-	margin-top: 250px;
-	border-radius: 10px;
-	font-family: 'Lato', 'sans-serif';
-	
-}
 text{
 background: rgb(0 0 0);
 }
