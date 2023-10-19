@@ -7,6 +7,13 @@
 body{
 	background-color: #232323;
 	color: #ffffff;
+        margin: 0;
+        padding: 0;
+}
+
+.container {
+margin-top: 160px;
+text-align: center;
 }
 
 header.content{
@@ -80,6 +87,15 @@ img2{
 	font-family: 'Lato', 'sans-serif';
 }
 
+#send_presence:hover {
+background-color: #6a7ff7;
+transition: 0.9s;
+
+box-shadow: 0px 0px 0px 1px rgba(106, 127, 247, 1);
+animation: anim-shadow .5s forwards;
+
+}
+
 text{
 background: rgb(0 0 0);
 }
@@ -98,6 +114,15 @@ background: rgb(0 0 0);
   border-radius: 50%;
   animation: rippleEffect 1s linear infinite;
 }
+
+@keyframes anim-shadow {
+
+  100% {
+   box-shadow: 0px 0px 30px 10px rgba(106, 127, 247, 0);
+  }
+
+}
+
 @keyframes rippleEffect {
   0% {
     width: 0;
