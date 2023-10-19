@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--hello-->
+<html lang="en">
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>WebhookManager</title>
+      <script src="java/main.js"></script>
+      <link rel="stylesheet" href="styles/style.css">
+   </head>
+   <body>
+ <div align="center" class="content">
+
+     <h3 class = "text" background-color: #ffffff >Webhook Test</h3>
+	
+	
+	
+	<div class="container">
+<button class="btn" id="send_presence" onclick="send()" id="SendMessage" >Send</button>
+      </div>
+	 
+       <script>
+        let btn = document.querySelector('.btn');
+      btn.addEventListener('click', function (e) {
+        const x = e.clientX - e.target.offsetLeft;
+        const y = e.clientY - e.target.offsetTop;
+        const Ripple = document.createElement('span');
+        Ripple.classList.add('ripple');
+        Ripple.style.left = x + 'px';
+        Ripple.style.top = y + 'px';
+        btn.appendChild(Ripple);
+        setTimeout(() => Ripple.remove(), 1000);
+      });
+	    
+          
+      </script>
+      <!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js what -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+      <script type="text/javascript">
+	  
+	
+    jQuery('#send_presence').on('click', function() {
+	      
+	// window.location = "https://xxnagibatorx1337x.github.io/download.html";
+	      
+      });
+          </script>
+      </script>
+   </body>
+</html>
