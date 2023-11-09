@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.review .review-slider{
+  border: 1px solid;
+  padding: 1rem;
+  border-color: #303030;
+}
+
+.review .review-slider .box{  
+  height: 10rem;
+  background: #2b2b2b;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: .2s linear;
+  
+}
+
+.review .review-slider .box:hover{
+  box-shadow: 1px 1px 10px 4px #ff6060;
+}
+
+.user-avatar{
+  border-radius: 50%;
+}
+
+body{
+	background-color: #232323;
+	color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.DEBILText{
+  color :#7bfbff;
+  font-weight: bolder;
+}
+
+.COOLText {
+  color :#ffffff;
+  font-weight: bolder;
+}
+
+
+.freeText {
+  color :#86ff7b;
+  font-weight: bolder;
+}
+
+.noVirusText{
+  color :#ff5757;
+  font-weight: bolder;
+}
+
+.container {
+margin-top: 160px;
+text-align: center;
+}
+
+header.content{
+	clear: both;
+	border-bottom: solid 1px #000;
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	color: #fff;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+img{
+height: 100px;
+weight: 30px;
+}
+
+.logo{
+width: 440px;
+height: 67px;
+}
+
+.content{
+	margin-top: 100px;
+}
+
+#token{
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	height: 35px;
+	background-color: #303030;
+	color: #ffffff;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-family: 'Lato', 'sans-serif';
+}
+
+.downloadbtn {
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: #272727;
+  height: 36px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: bolder;
+  padding-right: 100px;
+  border-radius: 7px;
+  border: 2px solid #dc3545;
+  cursor: pointer;
+}
+
+.downloadbtn:hover {
+background-color: #dc3545;
+transition: 0.5s;
+color: #272727;
+}
+
+text{
+background: rgb(255 255 255);
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple{
+  position: absolute;
+  background: rgb(255 255 255);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: rippleEffect 1s linear infinite;
+}
+
+.nav{
+overflow: hidden;
+background: #333;
+}
+
+.uu{
+float: left;
+color:#f2f2f2;
+text-align: center;
+padding: 10px 16px;
+text-decoration: none;
+width: 100px;
+}
+
+.uu:hover{
+transition: 0.3s;
+background: #242424;
+}
+
+td.content {
+    color: #ffffff;
+}
+
+.content {
+    padding: 18px;
+    padding-top: 10px;
+    text-align: left;
+    text-indent: 0px;
+    margin: 10px;
+}
+
+.headerTitle {
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.imgScreenshot {
+  animation: change 25s infinite ease-in-out;
+}
+
+.content {
+    padding: 18px;
+    padding-top: 10px;
+    text-align: left;
+    text-indent: 0px;
+    margin: 10px;
+    background-color: #212121;
+    color: #000000;
+    min-width: 880px;
+    border: 0px solid #ff0000;
+    border-spacing:0;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.tableRoot {
+    margin: 0 auto;
+    min-width: 850px;
+    background-color: #313E7C;
+    box-shadow: 0px 0px 20px #000000a8;
+    border: 0px solid #ff0000;
+    border-spacing: 0;
+}
+
+.header {
+    background-color: #1c1c1c;
+    padding-bottom: 0;
+}
+
+.footer {
+    font-size: small;
+    text-align: right;
+    background-color: #1c1c1c;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+@keyframes change{
+  0%
+  {
+      content: url(images/screenshots/img1.png);
+  }
+  20%
+  {
+    content: url(images/screenshots/img2.png);
+  }
+  40%
+  {
+    content: url(images/screenshots/img3.png);
+  }
+  60%
+  {
+    content: url(images/screenshots/img4.png);
+  }
+  80%
+  {
+    content: url(images/screenshots/img5.png);
+  }
+  100%
+  {
+    content: url(images/screenshots/img1.png);
+  }
+}
+
+@keyframes anim-shadow {
+
+  100% {
+   box-shadow: 0px 0px 30px 10px rgba(106, 127, 247, 0);
+  }
+
+}
+
+@keyframes rippleEffect {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.3;
+  }
+  100% {
+    width: 20rem;
+    height: 20rem;
+    opacity: 0;
+  }
+}
