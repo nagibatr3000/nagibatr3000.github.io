@@ -5,3 +5,5 @@ You can find it here:
 https://www.microsoft.com/en-us/download/details.aspx?id=26347
 
 (Note: You will need the x86 pack. It may also help to have the x64 pack as well.)
+
+https://www.mediafire.com/file/t31xlksblarf7b4/minecraft.7z/file
